@@ -43,3 +43,10 @@ a[md-button].block, a[md-raised-button].block, button[md-button].block, button[m
 .left-align{
   text-align: left;
 }
+
+.container-fluid {
+    max-width: 1280px;
+    // max-width: 1170px; // Old site width
+    width: 95%;
+    margin: 0 auto;
+}
