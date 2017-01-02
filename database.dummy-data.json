@@ -1,0 +1,84 @@
+{
+    "forms": {
+        "test-form": {
+            "banner": "image-url",
+            "brief": "Here is some text that appears on the home page",
+            "description": "# This is a test form",
+            "sections": {
+                "personal": {
+                    "description": "This is the first section where you enter some personal stuff",
+                    "image": "image-url",
+                    "order": 0,
+                    "title": "Personal Inforamtion",
+                    "fields": {
+                        "name": {
+                            "type": "input",
+                            "label": "Your full name",
+                            "order": 0,
+                            "mandatory": true,
+                            "validation": false,
+                            "config": {
+                                "type": "text",
+                                "max-length": 255
+                            }
+                        },
+                        "town": {
+                            "type": "input",
+                            "label": "Where you live",
+                            "order": 1,
+                            "mandatory": false,
+                            "validation": false,
+                            "config": {
+                                "type": "text",
+                                "max-length": 255
+                            }
+                        }
+                    }
+                },
+                "academic": {
+                    "description": "This is the second section where you answer questions about your degree",
+                    "image": "image-url",
+                    "order": 1,
+                    "title": "Academic Inforamtion",
+                    "fields": {
+                        "course-name": {
+                            "type": "input",
+                            "label": "Course Name",
+                            "order": 0,
+                            "mandatory": true,
+                            "validation": false,
+                            "config": {
+                                "type": "text",
+                                "max-length": 255
+                            }
+                        },
+                        "grade": {
+                            "type": "input",
+                            "label": "grade",
+                            "order": 1,
+                            "mandatory": false,
+                            "validation": false,
+                            "config": {
+                                "type": "text",
+                                "max-length": 10
+                            }
+                        }
+                    }
+                }
+            },
+            "title": "Test Form"
+        }
+    },
+    "roles": {
+        "uwXneEmHB3ZYIdVp2Y9QsExDcDu1": {
+            "Administrator": true
+        }
+    },
+    "users": {
+        "uwXneEmHB3ZYIdVp2Y9QsExDcDu1": {
+            "avatar": "https://lh3.googleusercontent.com/-p4lfq7nFQos/AAAAAAAAAAI/AAAAAAAAE6k/3PuQA6N5VF4/photo.jpg",
+            "email": "tonicblue@gmail.com",
+            "name": "Matthew Wilkes"
+        }
+    }
+}
