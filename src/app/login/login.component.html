@@ -1,0 +1,57 @@
+<div class="flex-container" fxLayout="row" fxFill fxLayoutAlign="center center">
+  <div class="flex-item" fxFlex="600px">
+    <md-card>
+      <md-card-title>Login</md-card-title>
+      <md-card-content>
+        <md-tab-group>
+          <md-tab label="Single Sign-on">
+            <div class="flex-container v-pad" fxLayout="row" fxlayout.xs="column" fxFill fxLayoutAlign="center">
+              <div class="flex-item" fxFlex>
+                <button md-raised-button (click)="sso('Google')" class="block">
+                  <md-icon fontSet="fa" fontIcon="fa-google"></md-icon>
+                  Google
+                </button>
+              </div>
+              <div class="flex-item" fxFlex>
+                <button md-raised-button (click)="sso('Facebook')" class="block">
+                  <md-icon fontSet="fa" fontIcon="fa-facebook"></md-icon>
+                  Facebook
+                </button>
+              </div>
+              <div class="flex-item" fxFlex>
+                <button md-raised-button (click)="sso('Twitter')" class="block">
+                  <md-icon fontSet="fa" fontIcon="fa-twitter"></md-icon>
+                  Twitter
+                </button>
+              </div>
+            </div>
+          </md-tab>
+          <md-tab label="Email Login">
+            <div class="v-pad">
+              <md-input-container style="width:100%">
+                <input md-input type="email" placeholder="Email Address">
+                <span md-prefix>
+                  <i class="fa fa-envelope fa-fw"></i>
+                  &nbsp;
+                </span>
+              </md-input-container>
+              <md-input-container style="width:100%">
+                <input md-input type="password" placeholder="Password">
+                <span md-prefix>
+                  <i class="fa fa-lock fa-fw"></i>
+                  &nbsp;
+                </span>
+              </md-input-container>
+              <p class="right-align">
+                <button md-raised-button>
+                  <md-icon fontSet="fa" fontIcon="fa-sign-in"></md-icon>
+                  Login
+                </button>
+              </p>
+            </div>
+          </md-tab>
+        </md-tab-group>
+      </md-card-content>
+    </md-card>
+  </div>
+</div>

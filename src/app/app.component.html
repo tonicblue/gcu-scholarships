@@ -1,0 +1,24 @@
+<md-sidenav-layout [class.m2app-dark]="isDarkTheme">
+  <md-toolbar color="primary">
+    <span></span>
+
+    <span class="app-toolbar-filler">GCU Scholarship Applications</span>
+
+    <span>
+      <button md-button class="app-icon-button" (click)="sidenav.toggle()">
+        <i class="material-icons app-toolbar-menu">menu</i>
+      </button>
+      <button md-button (click)="isDarkTheme = !isDarkTheme" class="app-icon-button">
+        <i class="material-icons">lightbulb_outline</i>
+      </button>
+    </span>
+  </md-toolbar>
+
+  <md-sidenav #sidenav mode="side" class="app-sidenav">
+    <ul>
+      <li><a href="/">Home</a></li>
+    </ul>
+  </md-sidenav>
+
+  <router-outlet></router-outlet>
+</md-sidenav-layout>

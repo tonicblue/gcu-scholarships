@@ -1,0 +1,10 @@
+<div class="container-fluid">
+  <md-card *ngFor="let form of forms_ | async">
+    <img md-card-image *ngIf="form.val().banner" [src]="form.val().banner">
+    <md-card-title>{{ form.val().title }}</md-card-title>
+    <md-card-content>{{ form.val().brief }}</md-card-content>
+    <md-card-actions>
+      <button md-button>Start</button>
+    </md-card-actions>
+  </md-card>
+</div>
