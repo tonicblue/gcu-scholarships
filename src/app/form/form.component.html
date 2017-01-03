@@ -1,0 +1,26 @@
+<div *ngIf="!form">
+  Loading
+</div>
+<div *ngIf="form">
+  <div class="v-pad">
+    <md-card>
+      <img md-card-image *ngIf="form" [src]="form.banner">
+      <md-card-subtitle>{{ form.brief }}</md-card-subtitle>
+      <md-card-title>{{ form.title }}</md-card-title>
+      <md-card-content>{{ form.description }}</md-card-content>
+    </md-card>
+  </div>
+
+  <div class="v-pad" *ngFor="let section of form.sections">
+    <md-card>
+      <img md-card-image *ngIf="section.image" [src]="section.image">
+      <md-card-title>{{ section.title }}</md-card-title>
+      <md-card-subtitle>{{ section.description }}</md-card-subtitle>
+      <md-card-content>
+        <div class="v-pad" *ngFor="let field of section.fields">
+          <field [type]="field.type" [config]="field"></field>
+        </div>
+      </md-card-content>
+    </md-card>
+  </div>
+</div>
